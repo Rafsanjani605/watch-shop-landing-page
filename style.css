@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-image: url('/img/header-background.jpg');
+    height: 145vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(230, 232, 235);
+    z-index: 10;
+    box-shadow: 10px 20px 10px solid white;
+    
+
+   
+    
+
+}
+
+header nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgb(230, 232, 235);
+    
+    
+    
+
+
+}
+nav img{
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+nav div:nth-child(2){
+   flex-basis: 40%; 
+   
+}
+
+nav button{
+    background-color: rgb(157, 19, 19);
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+
+
+
+/* nav ends */
+button{
+    border: none;
+}
+
+main button >div{
+ display: flex;
+ 
+ align-items: center;
+ align-content: center;
+ text-align: center;
+ gap: 15px;
+ padding-left: 10px;
+ padding-right: 10px;
+ border-radius: 10px;
+ background-color: rgb(255, 102, 34);
+ color: white;
+ margin-top: 0;
+}
+
+main button > div img{
+    height: 60%;
+    width: 38px;
+
+}
+
+header  main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  
+    text-align: center;
+    padding: 50px;
+    
+
+    
+    
+}
+
+header main div{
+    /* position: relative; */
+}
+
+header h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+header p{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.apple-watch{
+   
+   
+    /* display: flex;
+    justify-content: center; */
+    position: absolute;
+    
+    bottom: 6%;
+    left: 50%;  
+    transform: translateX(-50%);  
+    
+
+    display: flex;
+    justify-content: center;
+
+
+}
+.apple-watch img{
+    
+    
+    width: 250px;
+    max-width: 100%; 
+   
+}
+
+
+
+
+/* the product part start */
+
+.product{
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+   
+}
+
+.product h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: rgb(15, 13, 13);
+    
+}
+
+.product p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-bottom: 70px;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.product button{
+    
+    position: absolute;
+    bottom: 50%;
+    right: 45%;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+.product button a{
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    animation: newname infinite;
+}
+
+
+.product button::before{
+    content: '.';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    animation: newname 10s infinite;
+}
+
+
+@keyframes newname{
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100%, 0);
+    }
+    50% {
+        transform: translate(100%, 100%);
+    }
+    75% {
+        transform: translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.how-it-works{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.howitworksh1p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.howitworksh1p h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(48, 47, 47);
+    margin-bottom: 30px;
+}
+
+.howitworksh1p p{
+    color: rgba(0, 0, 0, 0.641);
+    font-size: 30px;
+}
+.how-it-works main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 100px auto;
+   
+}
+
+.how-it-works main div{
+    text-align: center;
+    
+}
+.how-it-works img{
+    margin-bottom: 30px;
+    height: 110px;
+
+}
+
+.how-it-works h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.how-it-works p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.577);
+}
+
+
+
+
+
+/* the product part ends */
+
